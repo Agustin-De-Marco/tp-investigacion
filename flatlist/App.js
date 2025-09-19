@@ -176,7 +176,8 @@ export default function App() {
           Estudiantes Registrados ({estudiantes.length})
         </Text>
         
-          // FlatList renderiza una lista de estudiantes de forma eficiente.
+        
+        {/* FlatList renderiza una lista de estudiantes de forma eficiente.*/}
         <FlatList
           data={estudiantes} // Los datos que se mostrarán (estudiantes).
           keyExtractor={item => item.id} // Se usa el id para identificar cada elemento.
