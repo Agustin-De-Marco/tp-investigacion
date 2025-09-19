@@ -174,14 +174,16 @@ export default function App() {
           Estudiantes Registrados ({estudiantes.length})
         </Text>
         
+          // FlatList renderiza una lista de estudiantes de forma eficiente.
         <FlatList
-          data={estudiantes}
-          keyExtractor={item => item.id}
-          renderItem={renderEstudiante}
-          ListEmptyComponent={renderEmptyList}
-          showsVerticalScrollIndicator={false}
-          style={styles.lista}
+          data={estudiantes} // Los datos que se mostrarán (estudiantes).
+          keyExtractor={item => item.id} // Se usa el id para identificar cada elemento.
+          renderItem={renderEstudiante} // Define cómo se muestra cada estudiante.
+          ListEmptyComponent={renderEmptyList} // Muestra un mensaje si no hay estudiantes.
+          showsVerticalScrollIndicator={false} // No muestra la barra de desplazamiento.
+          style={styles.lista} // Aplica estilos a la lista.
         />
+
       </View>
 
       {/* Modal de edición */}
