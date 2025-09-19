@@ -1,3 +1,5 @@
+// npx expo start --tunnel
+
 import React, { useState } from 'react';
 import {
   View,
